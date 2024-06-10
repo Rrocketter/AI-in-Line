@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5F3D66B2C0BFDEC00A122B1 /* NoteInlineAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D66A2C0BFDEC00A122B1 /* NoteInlineAIApp.swift */; };
+		D5F3D66D2C0BFDEC00A122B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D66C2C0BFDEC00A122B1 /* ContentView.swift */; };
+		D5F3D66F2C0BFDED00A122B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F3D66E2C0BFDED00A122B1 /* Assets.xcassets */; };
+		D5F3D6722C0BFDED00A122B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F3D6712C0BFDED00A122B1 /* Preview Assets.xcassets */; };
+		D5F3D67D2C0BFDED00A122B1 /* NoteInlineAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D67C2C0BFDED00A122B1 /* NoteInlineAITests.swift */; };
+		D5F3D6872C0BFDED00A122B1 /* NoteInlineAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D6862C0BFDED00A122B1 /* NoteInlineAIUITests.swift */; };
+		D5F3D6892C0BFDED00A122B1 /* NoteInlineAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D6882C0BFDED00A122B1 /* NoteInlineAIUITestsLaunchTests.swift */; };
+		D5F3D6972C0E96C400A122B1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D6962C0E96C400A122B1 /* File.swift */; };
+		D5F3D6992C0EA25000A122B1 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D6982C0EA25000A122B1 /* Accessibility.swift */; };
+		D5F3D69B2C0F8C1600A122B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D69A2C0F8C1600A122B1 /* AppDelegate.swift */; };
+		D5F3D69D2C13635500A122B1 /* KeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D69C2C13635500A122B1 /* KeyHandler.swift */; };
+		D5F3D69F2C1363B000A122B1 /* PromptInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D69E2C1363B000A122B1 /* PromptInput.swift */; };
+		D5F3D6A32C1369E000A122B1 /* PasteboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D6A22C1369E000A122B1 /* PasteboardHelper.swift */; };
+		D5F3D6A72C137F9000A122B1 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5F3D6A62C137F9000A122B1 /* Entitlements.plist */; };
+		D5F3D6A92C13AF1E00A122B1 /* OllamaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3D6A82C13AF1E00A122B1 /* OllamaService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5F3D6792C0BFDED00A122B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F3D65F2C0BFDEC00A122B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F3D6662C0BFDEC00A122B1;
+			remoteInfo = NoteInlineAI;
+		};
+		D5F3D6832C0BFDED00A122B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F3D65F2C0BFDEC00A122B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F3D6662C0BFDEC00A122B1;
+			remoteInfo = NoteInlineAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5F3D6672C0BFDEC00A122B1 /* NoteInlineAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteInlineAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F3D66A2C0BFDEC00A122B1 /* NoteInlineAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInlineAIApp.swift; sourceTree = "<group>"; };
+		D5F3D66C2C0BFDEC00A122B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5F3D66E2C0BFDED00A122B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5F3D6712C0BFDED00A122B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5F3D6732C0BFDED00A122B1 /* NoteInlineAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoteInlineAI.entitlements; sourceTree = "<group>"; };
+		D5F3D6782C0BFDED00A122B1 /* NoteInlineAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteInlineAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F3D67C2C0BFDED00A122B1 /* NoteInlineAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInlineAITests.swift; sourceTree = "<group>"; };
+		D5F3D6822C0BFDED00A122B1 /* NoteInlineAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteInlineAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F3D6862C0BFDED00A122B1 /* NoteInlineAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInlineAIUITests.swift; sourceTree = "<group>"; };
+		D5F3D6882C0BFDED00A122B1 /* NoteInlineAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInlineAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5F3D6952C0DF7A900A122B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5F3D6962C0E96C400A122B1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		D5F3D6982C0EA25000A122B1 /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
+		D5F3D69A2C0F8C1600A122B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5F3D69C2C13635500A122B1 /* KeyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyHandler.swift; sourceTree = "<group>"; };
+		D5F3D69E2C1363B000A122B1 /* PromptInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptInput.swift; sourceTree = "<group>"; };
+		D5F3D6A22C1369E000A122B1 /* PasteboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardHelper.swift; sourceTree = "<group>"; };
+		D5F3D6A62C137F9000A122B1 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		D5F3D6A82C13AF1E00A122B1 /* OllamaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5F3D6642C0BFDEC00A122B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F3D6752C0BFDED00A122B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F3D67F2C0BFDED00A122B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5F3D65E2C0BFDEB00A122B1 = {
+			isa = PBXGroup;
+			children = (
+				D5F3D6692C0BFDEC00A122B1 /* NoteInlineAI */,
+				D5F3D67B2C0BFDED00A122B1 /* NoteInlineAITests */,
+				D5F3D6852C0BFDED00A122B1 /* NoteInlineAIUITests */,
+				D5F3D6682C0BFDEC00A122B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5F3D6682C0BFDEC00A122B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5F3D6672C0BFDEC00A122B1 /* NoteInlineAI.app */,
+				D5F3D6782C0BFDED00A122B1 /* NoteInlineAITests.xctest */,
+				D5F3D6822C0BFDED00A122B1 /* NoteInlineAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5F3D6692C0BFDEC00A122B1 /* NoteInlineAI */ = {
+			isa = PBXGroup;
+			children = (
+				D5F3D6952C0DF7A900A122B1 /* Info.plist */,
+				D5F3D6A62C137F9000A122B1 /* Entitlements.plist */,
+				D5F3D66A2C0BFDEC00A122B1 /* NoteInlineAIApp.swift */,
+				D5F3D66C2C0BFDEC00A122B1 /* ContentView.swift */,
+				D5F3D66E2C0BFDED00A122B1 /* Assets.xcassets */,
+				D5F3D6732C0BFDED00A122B1 /* NoteInlineAI.entitlements */,
+				D5F3D6702C0BFDED00A122B1 /* Preview Content */,
+				D5F3D6962C0E96C400A122B1 /* File.swift */,
+				D5F3D6982C0EA25000A122B1 /* Accessibility.swift */,
+				D5F3D69A2C0F8C1600A122B1 /* AppDelegate.swift */,
+				D5F3D69C2C13635500A122B1 /* KeyHandler.swift */,
+				D5F3D69E2C1363B000A122B1 /* PromptInput.swift */,
+				D5F3D6A82C13AF1E00A122B1 /* OllamaService.swift */,
+				D5F3D6A22C1369E000A122B1 /* PasteboardHelper.swift */,
+			);
+			path = NoteInlineAI;
+			sourceTree = "<group>";
+		};
+		D5F3D6702C0BFDED00A122B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D5F3D6712C0BFDED00A122B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5F3D67B2C0BFDED00A122B1 /* NoteInlineAITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5F3D67C2C0BFDED00A122B1 /* NoteInlineAITests.swift */,
+			);
+			path = NoteInlineAITests;
+			sourceTree = "<group>";
+		};
+		D5F3D6852C0BFDED00A122B1 /* NoteInlineAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5F3D6862C0BFDED00A122B1 /* NoteInlineAIUITests.swift */,
+				D5F3D6882C0BFDED00A122B1 /* NoteInlineAIUITestsLaunchTests.swift */,
+			);
+			path = NoteInlineAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5F3D6662C0BFDEC00A122B1 /* NoteInlineAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F3D68C2C0BFDED00A122B1 /* Build configuration list for PBXNativeTarget "NoteInlineAI" */;
+			buildPhases = (
+				D5F3D6632C0BFDEC00A122B1 /* Sources */,
+				D5F3D6642C0BFDEC00A122B1 /* Frameworks */,
+				D5F3D6652C0BFDEC00A122B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteInlineAI;
+			productName = NoteInlineAI;
+			productReference = D5F3D6672C0BFDEC00A122B1 /* NoteInlineAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5F3D6772C0BFDED00A122B1 /* NoteInlineAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F3D68F2C0BFDED00A122B1 /* Build configuration list for PBXNativeTarget "NoteInlineAITests" */;
+			buildPhases = (
+				D5F3D6742C0BFDED00A122B1 /* Sources */,
+				D5F3D6752C0BFDED00A122B1 /* Frameworks */,
+				D5F3D6762C0BFDED00A122B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F3D67A2C0BFDED00A122B1 /* PBXTargetDependency */,
+			);
+			name = NoteInlineAITests;
+			productName = NoteInlineAITests;
+			productReference = D5F3D6782C0BFDED00A122B1 /* NoteInlineAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5F3D6812C0BFDED00A122B1 /* NoteInlineAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F3D6922C0BFDED00A122B1 /* Build configuration list for PBXNativeTarget "NoteInlineAIUITests" */;
+			buildPhases = (
+				D5F3D67E2C0BFDED00A122B1 /* Sources */,
+				D5F3D67F2C0BFDED00A122B1 /* Frameworks */,
+				D5F3D6802C0BFDED00A122B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F3D6842C0BFDED00A122B1 /* PBXTargetDependency */,
+			);
+			name = NoteInlineAIUITests;
+			productName = NoteInlineAIUITests;
+			productReference = D5F3D6822C0BFDED00A122B1 /* NoteInlineAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5F3D65F2C0BFDEC00A122B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D5F3D6662C0BFDEC00A122B1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D5F3D6772C0BFDED00A122B1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D5F3D6662C0BFDEC00A122B1;
+					};
+					D5F3D6812C0BFDED00A122B1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D5F3D6662C0BFDEC00A122B1;
+					};
+				};
+			};
+			buildConfigurationList = D5F3D6622C0BFDEC00A122B1 /* Build configuration list for PBXProject "NoteInlineAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5F3D65E2C0BFDEB00A122B1;
+			productRefGroup = D5F3D6682C0BFDEC00A122B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5F3D6662C0BFDEC00A122B1 /* NoteInlineAI */,
+				D5F3D6772C0BFDED00A122B1 /* NoteInlineAITests */,
+				D5F3D6812C0BFDED00A122B1 /* NoteInlineAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5F3D6652C0BFDEC00A122B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F3D6A72C137F9000A122B1 /* Entitlements.plist in Resources */,
+				D5F3D6722C0BFDED00A122B1 /* Preview Assets.xcassets in Resources */,
+				D5F3D66F2C0BFDED00A122B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F3D6762C0BFDED00A122B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F3D6802C0BFDED00A122B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5F3D6632C0BFDEC00A122B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F3D66D2C0BFDEC00A122B1 /* ContentView.swift in Sources */,
+				D5F3D6A92C13AF1E00A122B1 /* OllamaService.swift in Sources */,
+				D5F3D6A32C1369E000A122B1 /* PasteboardHelper.swift in Sources */,
+				D5F3D6972C0E96C400A122B1 /* File.swift in Sources */,
+				D5F3D69D2C13635500A122B1 /* KeyHandler.swift in Sources */,
+				D5F3D69F2C1363B000A122B1 /* PromptInput.swift in Sources */,
+				D5F3D6992C0EA25000A122B1 /* Accessibility.swift in Sources */,
+				D5F3D69B2C0F8C1600A122B1 /* AppDelegate.swift in Sources */,
+				D5F3D66B2C0BFDEC00A122B1 /* NoteInlineAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F3D6742C0BFDED00A122B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F3D67D2C0BFDED00A122B1 /* NoteInlineAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F3D67E2C0BFDED00A122B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F3D6872C0BFDED00A122B1 /* NoteInlineAIUITests.swift in Sources */,
+				D5F3D6892C0BFDED00A122B1 /* NoteInlineAIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5F3D67A2C0BFDED00A122B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F3D6662C0BFDEC00A122B1 /* NoteInlineAI */;
+			targetProxy = D5F3D6792C0BFDED00A122B1 /* PBXContainerItemProxy */;
+		};
+		D5F3D6842C0BFDED00A122B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F3D6662C0BFDEC00A122B1 /* NoteInlineAI */;
+			targetProxy = D5F3D6832C0BFDED00A122B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D5F3D68A2C0BFDED00A122B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5F3D68B2C0BFDED00A122B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D5F3D68D2C0BFDED00A122B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoteInlineAI/NoteInlineAI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NoteInlineAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PMW658M54;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoteInlineAI/Info.plist;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "We need to monitor keystrokes in Apple Notes.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rahul-Gupta.NoteInlineAI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D5F3D68E2C0BFDED00A122B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoteInlineAI/NoteInlineAI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NoteInlineAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PMW658M54;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoteInlineAI/Info.plist;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "We need to monitor keystrokes in Apple Notes.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rahul-Gupta.NoteInlineAI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D5F3D6902C0BFDED00A122B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PMW658M54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rahul-Gupta.NoteInlineAITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteInlineAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoteInlineAI";
+			};
+			name = Debug;
+		};
+		D5F3D6912C0BFDED00A122B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PMW658M54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rahul-Gupta.NoteInlineAITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteInlineAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoteInlineAI";
+			};
+			name = Release;
+		};
+		D5F3D6932C0BFDED00A122B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PMW658M54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rahul-Gupta.NoteInlineAIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NoteInlineAI;
+			};
+			name = Debug;
+		};
+		D5F3D6942C0BFDED00A122B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PMW658M54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rahul-Gupta.NoteInlineAIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NoteInlineAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5F3D6622C0BFDEC00A122B1 /* Build configuration list for PBXProject "NoteInlineAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F3D68A2C0BFDED00A122B1 /* Debug */,
+				D5F3D68B2C0BFDED00A122B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F3D68C2C0BFDED00A122B1 /* Build configuration list for PBXNativeTarget "NoteInlineAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F3D68D2C0BFDED00A122B1 /* Debug */,
+				D5F3D68E2C0BFDED00A122B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F3D68F2C0BFDED00A122B1 /* Build configuration list for PBXNativeTarget "NoteInlineAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F3D6902C0BFDED00A122B1 /* Debug */,
+				D5F3D6912C0BFDED00A122B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F3D6922C0BFDED00A122B1 /* Build configuration list for PBXNativeTarget "NoteInlineAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F3D6932C0BFDED00A122B1 /* Debug */,
+				D5F3D6942C0BFDED00A122B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5F3D65F2C0BFDEC00A122B1 /* Project object */;
+}
